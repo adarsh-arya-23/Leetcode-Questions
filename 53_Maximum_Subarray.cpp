@@ -16,6 +16,7 @@ Algorithm Explanation:
 #include <algorithm>
 #include <vector>
 using namespace std;
+/*
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -28,6 +29,24 @@ public:
             }
         }
         return res;
+    }
+};
+*/
+
+// Kadane's Algorithm
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int max_so_far = nums[0];
+        int current_max = nums[0];
+
+        for (size_t i = 1; i < nums.size(); ++i) {
+            current_max = max(nums[i], current_max + nums[i]);
+            max_so_far = max(max_so_far, current_max);
+        }
+        return max_so_far;
     }
 };
 int main() {
