@@ -22,10 +22,10 @@ Problems are solved **regularly** and added as **individual files**, following a
 ```text
 <ProblemNumber>_<Problem_Title>.cpp
 ```
-1,Two Sum
-2,Add Two Numbers
-3,Longest Substring Without Repeating Characters
-4,Median of Two Sorted Arrays
+1_Two Sum
+2_Add Two Numbers
+3_Longest Substring Without Repeating Characters
+4_Median of Two Sorted Arrays
 7,Reverse Integer
 9,Palindrome Number
 11,Container With Most Water
