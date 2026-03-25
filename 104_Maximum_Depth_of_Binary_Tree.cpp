@@ -48,6 +48,5 @@ int main() {
     delete root->left;
     delete root->right;
     delete root;
-
     return 0;
 }
